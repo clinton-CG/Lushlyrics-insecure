@@ -39,12 +39,12 @@
 
             <span class='label signup-title center-align'>Sign up for free to start listening.</span>
             <label for="sign-up-username" class="label">
-                What's your name?{% if username %}
+                What's your username?{% if username %}
                 <span style="color:#f79862;">Username already exists</span>
             {% endif %}
             </label>
 
-            {{form.first_name}}
+            {{form.username}}
 
 
             <label for="sign-up-email" class="label">

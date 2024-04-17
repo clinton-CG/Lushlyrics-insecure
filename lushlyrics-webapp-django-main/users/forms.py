@@ -14,21 +14,9 @@ class RegistrationForm(forms.ModelForm):
     
     class Meta:
         model = Account
-        fields = ['first_name','last_name','phone_number','email','password']
+        fields = ['email','password']
         
         widgets = {
-            'first_name':forms.TextInput(attrs={
-                'placeholder':'Enter First Name',
-                'class':'form-input'
-            }),
-            'last_name':forms.TextInput(attrs={
-                'placeholder':'Enter Last Name',
-                'class':'form-input'
-            }),
-            'phone_number':forms.TextInput(attrs={
-                'placeholder':'Enter Phone Number',
-                'class':'form-input'
-            }),
             'email':forms.EmailInput(attrs={
                 'placeholder':'Enter Email',
                 'class':'form-input'
